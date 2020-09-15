@@ -2,4 +2,8 @@
 
 <%= render 'form', shark: @shark %>
 
-<%= link_to 'Back', sharks_path %>
+
+<!-- <%= link_to 'Back', sharks_path %> -->
+
+<!-- Similarly, style the button at the bottom of the app/views/sharks/new.html.erb, so that it looks like: -->
+<%= link_to 'Back', sharks_path, :class => "btn btn-primary btn-sm" %>

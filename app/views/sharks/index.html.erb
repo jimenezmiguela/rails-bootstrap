@@ -26,4 +26,11 @@
 
 <br>
 
-<%= link_to 'New Shark', new_shark_path %>
+<!-- Finally, we have to style the buttons in the other views.
+
+In app/views/sharks/index.html.erb, replace
+<%= link_to 'New Shark', new_shark_path %> -->
+
+<!-- with -->
+<!-- which styles the buttons and adds a home link.   -->
+<%= link_to 'New Shark', new_shark_path, :class => "btn btn-primary btn-sm" %> <%= link_to 'Home', home_index_path, :class => "btn btn-primary btn-sm" %>

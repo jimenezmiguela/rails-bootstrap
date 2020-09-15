@@ -2,5 +2,10 @@
 
 <%= render 'form', shark: @shark %>
 
-<%= link_to 'Show', @shark %> |
+<!-- <%= link_to 'Show', @shark %> | -->
 <%= link_to 'Back', sharks_path %>
+
+<!-- Similarly, style the the buttons in app/views/sharks/edit.html.erb, so that they
+look like: -->
+
+<%= link_to 'Show', @shark, :class => "btn btn-primary btn-sm" %> <%= link_to 'Back', sharks_path, :class => "btn btn-primary btn-sm" %>
